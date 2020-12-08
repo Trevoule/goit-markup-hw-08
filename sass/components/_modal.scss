@@ -1,0 +1,46 @@
+/* когда показано */
+.modal {
+  position: absolute;
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  height: 581px;
+  width: 528px;
+  /* padding: 15px; */
+
+  background-color: #fff;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 8px;
+  margin-right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-info {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.09;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-black;
+}

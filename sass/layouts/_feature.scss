@@ -1,0 +1,63 @@
+/* Преимущества */
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.feature-list {
+  display: block;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.feature-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.feature-list .item {
+  @include for-size(mobile) {
+    width: 450px;
+  }
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+
+.feature-list .item:not(:nth-child(2n)) {
+  @include for-size(tablet) {
+    margin-right: 30px;
+  }
+}
+
+.feature-list .item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-gray;
+}

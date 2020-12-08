@@ -1,0 +1,43 @@
+/*Услуги*/
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.options {
+  display: flex;
+  padding-left: auto;
+  padding-right: auto;
+
+  margin-bottom: 34px;
+  align-items: center;
+  justify-content: center;
+
+  .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.options-button {
+  display: inline-flex;
+  color: $primary-text-black;
+  background-color: $background-team;
+  text-align: center;
+  align-items: center;
+  padding: 6px 22px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $text-accent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

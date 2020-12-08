@@ -1,0 +1,18 @@
+.join-us {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 70px;
+  width: 206px;
+}
+
+.join-section {
+  margin-bottom: 20px;
+  color: $white;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

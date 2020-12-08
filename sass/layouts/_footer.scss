@@ -1,0 +1,40 @@
+/* Footer */
+.footer {
+  background-color: $background-hero;
+
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.padding-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address {
+  color: $white;
+  text-decoration: none;
+
+  .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .item:first-child {
+    margin-top: 20px;
+  }
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.flex-footer {
+  display: flex;
+}
+
+.div-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
