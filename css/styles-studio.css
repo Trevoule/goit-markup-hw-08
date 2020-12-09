@@ -9,7 +9,6 @@ html {
 ::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 h1,
@@ -84,7 +83,13 @@ img {
 }
 
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+  }
 }
 
 .section-title {
@@ -343,7 +348,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -808,11 +813,35 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
-.clients .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .clients {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .item:not(:last-child) {
+    margin-right: 30px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients .item:not(:nth-child(2n)) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .clients .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients-box {
@@ -828,11 +857,28 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   background-color: #ffffff;
-  width: 170px;
   height: 90px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-box {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-box {
+    width: 226px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-box {
+    width: 210px;
+  }
 }
 
 .clients-box:hover, .clients-box:focus {
@@ -862,6 +908,12 @@ img {
 .padding-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-address {
@@ -883,9 +935,15 @@ img {
 }
 
 .flex-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .div-footer {

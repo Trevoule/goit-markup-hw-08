@@ -9,19 +9,20 @@
   }
 
   .description {
-    width: 270px;
-    margin-bottom: 30px;
-    font-weight: 500;
+    width: auto;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.187;
 
+    justify-content: center;
     text-align: center;
     color: $primary-text-black;
     background-color: $white;
 
     font-weight: normal;
     color: $primary-text-gray;
-    margin-top: 10px;
   }
 }
 
@@ -31,10 +32,12 @@
 
 .team-padding {
   padding-bottom: 30px;
-  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
 
   @include for-size(tablet) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @include for-size(desktop) {
@@ -62,7 +65,12 @@
   }
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width: 767px) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 
   @include for-size(tablet) {
@@ -73,8 +81,10 @@
     width: 270px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-wrap: wrap;
+  &:not(:nth-child(2n)) {
+    @include for-size(tablet) {
+      margin-right: 30px;
+    }
   }
 }
 
