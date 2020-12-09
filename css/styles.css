@@ -951,6 +951,8 @@ img {
 /* Team */
 .team {
   padding-top: 60px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 @media (min-width: 1200px) {
@@ -1027,13 +1029,20 @@ img {
 
 @media (min-width: 768px) {
   .team-item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 
 @media (min-width: 1200px) {
   .team-item {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
