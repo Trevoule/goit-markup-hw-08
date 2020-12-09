@@ -129,10 +129,6 @@ img {
   padding-bottom: 94px;
 }
 
-.addresses {
-  width: 231px;
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -142,6 +138,16 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.addresses {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .addresses {
+    width: 232px;
+  }
 }
 
 .logo {
@@ -1165,12 +1171,6 @@ img {
 .padding-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .footer-address {
@@ -1193,13 +1193,27 @@ img {
 
 .flex-footer {
   display: block;
+  padding-right: 124px;
+  padding-left: 124px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1199px) {
   .flex-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 60px;
+    padding-right: 76px;
   }
 }
 
@@ -1222,14 +1236,30 @@ img {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .subscription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .subscription-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .subscription-form {
+    display: block;
+  }
+}
+
 .mail-subscription {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 15px;
   background-color: transparent;
@@ -1246,8 +1276,16 @@ img {
   outline: rgba(255, 255, 255, 0.3);
 }
 
+@media (min-width: 1200px) {
+  .mail-subscription {
+    width: 358px;
+  }
+}
+
 .btn-subscription {
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: inline-block;
   border-radius: 4px;
   width: 200px;
@@ -1263,6 +1301,14 @@ img {
   line-height: 30px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .btn-subscription {
+    margin-left: 12px;
+    margin-top: 0;
+    margin-right: 0;
+  }
 }
 
 .btn-sub-span {
@@ -1287,9 +1333,16 @@ img {
   bottom: 0;
   right: 0;
   margin-left: 10px;
-  margin-right: 28px;
+  margin-right: 150px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (min-width: 1200px) {
+  .svg-btn {
+    margin-left: 10px;
+    margin-right: 28px;
+  }
 }
 
 .join-us {
@@ -1307,6 +1360,15 @@ img {
   width: 206px;
 }
 
+@media screen and (max-width: 767px) {
+  .join-us {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .join-section {
   margin-bottom: 20px;
   color: #ffffff;
@@ -1315,5 +1377,14 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .join-section {
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -111,10 +111,6 @@ img {
   padding-bottom: 94px;
 }
 
-.addresses {
-  width: 231px;
-}
-
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -124,4 +120,12 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.addresses {
+  width: 100%;
+
+  @media screen and(min-width:768px) {
+    width: 232px;
+  }
 }
