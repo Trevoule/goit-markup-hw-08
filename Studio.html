@@ -56,11 +56,23 @@
             </ul>
             <h2 class="visually-hidden">Примеры работ</h2>
             <div class="container">
-                <ul class="flex-container list">
+                <ul class="flex-container-studio list">
 
                     <li class="flex-element">
                         <div class="product-thumb">
-                            <img src="./images-studio/tehnokryak.jpg" alt="Технокряк" width="370">
+                            <picture>
+                                <!-- браузер читает первое подходящее медиа правило, поэтому десктоп нужно подключать выше -->
+                                <source
+                                    srcset=" ./images-studio/desktop/techno.jpg 1x, ./images-studio/desktop/techno@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images-studio/tablet/techno.jpg 1x, ./images-studio/tablet/techno@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images-studio/mobile/techno.jpg 1x, ./images-studio/mobile/techno@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images-studio/desktop/techno.jpg" alt="Технокряк" width="">
+                            </picture>
                             <div class="product-overlay">
                                 <p class="product-info">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют
@@ -72,13 +84,24 @@
                         <div class="description">
                             <h3 class="item-title">Технокряк</h3>
                             <p class="item-description">Веб-сайт</p>
-
                         </div>
                     </li>
                     <li class="flex-element">
                         <div class="product-thumb">
-                            <img src="./images-studio/poster-new-orlean.jpg" alt="Постер New Orlean vs Golden Star"
-                                width="370">
+                            <picture>
+                                <!-- браузер читает первое подходящее медиа правило, поэтому десктоп нужно подключать выше -->
+                                <source
+                                    srcset=" ./images-studio/desktop/ball.jpg 1x, ./images-studio/desktop/ball@2x.jpg 2x"
+                                    media="(min-width: 1200px)" />
+                                <source
+                                    srcset="./images-studio/tablet/ball.jpg 1x, ./images-studio/tablet/ball@2x.jpg 2x"
+                                    media="(min-width: 768px)" />
+                                <source
+                                    srcset="./images-studio/mobile/ball.jpg 1x, ./images-studio/mobile/ball@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                                <img src="./images-studio/desktop/ball.jpg" alt="Постер New Orlean vs Golden Star"
+                                    width="">
+                            </picture>
                             <div class="product-overlay">
                                 <p class="product-info">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют
@@ -93,50 +116,119 @@
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/restaurant-sea-food.jpg" alt="Ресторан Seafood" width="370">
+                        <picture>
+                            <source
+                                srcset=" ./images-studio/desktop/sea_food.jpg 1x, ./images-studio/desktop/sea_food@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images-studio/tablet/sea_food.jpg 1x, ./images-studio/tablet/sea_food@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="./images-studio/mobile/sea_food.jpg 1x, ./images-studio/mobile/sea_food@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/sea_food.jpg" alt="Ресторан Seafood" width="">
+                        </picture>
                         <div class="description">
                             <h3 class="item-title">Ресторан Seafood</h3>
                             <p class="item-description">Приложение</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/project-prime.jpg" alt="Проект Prime" width="370">
+                        <picture>
+                            <source
+                                srcset=" ./images-studio/desktop/prime.jpg 1x, ./images-studio/desktop/prime@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images-studio/tablet/prime.jpg 1x, ./images-studio/tablet/prime@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images-studio/mobile/prime.jpg 1x, ./images-studio/mobile/prime@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/prime.jpg" alt="Проект Prime" width="">
+                        </picture>
+
                         <div class="description">
                             <h3 class="item-title">Проект Prime</h3>
                             <p class="item-description">Маркетинг</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/project-boxes.jpg" alt="Проект Boxes" width="370">
+                        <picture>
+                            <source srcset=" ./images-studio/desktop/box.jpg 1x, ./images-studio/desktop/box@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images-studio/tablet/box.jpg 1x, ./images-studio/tablet/box@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images-studio/mobile/box.jpg 1x, ./images-studio/mobile/box@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/box.jpg" alt="Проект Boxes" width="">
+                        </picture>
+
                         <div class="description">
                             <h3 class="item-title">Проект Boxes</h3>
                             <p class="item-description">Приложение</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/inspiration-has-no-borders.jpg" alt="Inspiration has no Borders"
-                            width="370">
+                        <picture>
+                            <source
+                                srcset=" ./images-studio/desktop/monitor.jpg 1x, ./images-studio/desktop/monitor@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images-studio/tablet/monitor.jpg 1x, ./images-studio/tablet/monitor@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="./images-studio/mobile/monitor.jpg 1x, ./images-studio/mobile/monitor@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/monitor.jpg" alt="Inspiration has no Borders" width="">
+                        </picture>
                         <div class="description">
                             <h3 class="item-title">Inspiration has no Borders</h3>
                             <p class="item-description">Веб-сайт</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/limited-edition.jpg" alt="Издание Limited Edition" width="370">
+                        <picture>
+                            <source
+                                srcset=" ./images-studio/desktop/limited.jpg 1x, ./images-studio/desktop/limited@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images-studio/tablet/limited.jpg 1x, ./images-studio/tablet/limited@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source
+                                srcset="./images-studio/mobile/limited.jpg 1x, ./images-studio/mobile/limited@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/limited.jpg" alt="Издание Limited Edition" width="">
+                        </picture>
                         <div class="description">
                             <h3 class="item-title">Издание Limited Edition</h3>
                             <p class="item-description">Дизайн</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/project-lab.jpg" alt="Проект LAB" width="370">
+                        <picture>
+                            <source srcset=" ./images-studio/desktop/lab.jpg 1x, ./images-studio/desktop/lab@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images-studio/tablet/lab.jpg 1x, ./images-studio/tablet/lab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images-studio/mobile/lab.jpg 1x, ./images-studio/mobile/lab@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/lab.jpg" alt="Проект LAB" width="370">
+                        </picture>
                         <div class="description">
                             <h3 class="item-title">Проект LAB</h3>
                             <p class="item-description">Маркетинг</p>
                         </div>
                     </li>
                     <li class="flex-element">
-                        <img src="./images-studio/growing-business.jpg" alt="Growing Business" width="370">
+                        <picture>
+                            <source
+                                srcset=" ./images-studio/desktop/grow.jpg 1x, ./images-studio/desktop/grow@2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images-studio/tablet/grow.jpg 1x, ./images-studio/tablet/grow@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images-studio/mobile/grow.jpg 1x, ./images-studio/mobile/grow@2x.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images-studio/desktop/grow.jpg" alt="Growing Business" width="">
+                        </picture>
+
                         <div class="description">
                             <h3 class="item-title">Growing Business</h3>
                             <p class="item-description">Приложение</p>

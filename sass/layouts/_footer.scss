@@ -1,10 +1,13 @@
 /* Footer */
 .footer {
   background-color: $background-hero;
-
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 
 .padding-footer {
@@ -32,22 +35,29 @@
 
 .flex-footer {
   display: block;
-  padding-right: 124px;
-  padding-left: 124px;
 
-  @media screen and(min-width:1199px) {
-    display: flex;
-  }
-
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
-    padding-right: 76px;
+    justify-content: space-between;
+  }
+
+  @media screen and(min-width:1199px) {
+    display: flex;
   }
 }
 
 .div-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.addresses {
+  width: 100%;
+
+  @media screen and(min-width:768px) {
+    width: 232px;
+    margin-left: 20px;
+  }
 }
