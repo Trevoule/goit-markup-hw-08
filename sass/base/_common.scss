@@ -4,7 +4,8 @@ html {
 
 *,
 ::before,
-::after {
+::after,
+img {
   box-sizing: inherit;
   // outline: 2px solid red;
 }

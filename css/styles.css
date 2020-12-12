@@ -6,7 +6,8 @@ html {
 
 *,
 ::before,
-::after {
+::after,
+img {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -296,8 +297,8 @@ img {
   background-color: #2196f3;
   display: inline-block;
   border-radius: 4px;
-  padding: 15px 32px;
-  min-width: 200px;
+  padding: 10px 32px;
+  min-width: 130px;
   border: 1px solid transparent;
   color: #ffffff;
   font-weight: 700;
@@ -452,18 +453,27 @@ img {
 .modal {
   position: absolute;
   position: relative;
-  top: 50%;
+  top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 450px;
   /* padding: 15px; */
   background-color: #fff;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .close-modal {
