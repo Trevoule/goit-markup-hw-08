@@ -4,8 +4,7 @@ html {
 
 *,
 ::before,
-::after,
-img {
+::after {
   box-sizing: inherit;
   // outline: 2px solid red;
 }
@@ -34,6 +33,9 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  outline: 1px solid red;
 }
 
 .list {

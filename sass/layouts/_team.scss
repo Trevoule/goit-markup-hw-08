@@ -28,6 +28,11 @@
 
 .background-team {
   background-color: $background-team;
+  width: 480px;
+
+  @media screen and(min-width:481px) {
+    width: 100%;
+  }
 }
 
 .team-padding {

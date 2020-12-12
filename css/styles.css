@@ -6,8 +6,7 @@ html {
 
 *,
 ::before,
-::after,
-img {
+::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -36,6 +35,9 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  outline: 1px solid red;
 }
 
 .list {
@@ -683,6 +685,8 @@ img {
 @media screen and (max-width: 767px) {
   .site-nav .item:not(:first-child) {
     display: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -787,7 +791,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 480px;
+  min-width: 480px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -1028,6 +1032,13 @@ img {
 
 .background-team {
   background-color: #f5f4fa;
+  width: 480px;
+}
+
+@media screen and (min-width: 481px) {
+  .background-team {
+    width: 100%;
+  }
 }
 
 .team-padding {
@@ -1403,6 +1414,7 @@ img {
 }
 
 .svg-btn {
+  width: 23px;
   position: absolute;
   bottom: 0;
   right: 0;

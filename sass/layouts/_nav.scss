@@ -33,6 +33,8 @@
   .item:not(:first-child) {
     @media screen and(max-width:767px) {
       display: none;
+      margin-top: 32px;
+      margin-bottom: 32px;
     }
   }
 }

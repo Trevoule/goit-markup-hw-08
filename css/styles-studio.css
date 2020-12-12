@@ -6,8 +6,7 @@ html {
 
 *,
 ::before,
-::after,
-img {
+::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -36,6 +35,9 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  outline: 1px solid red;
 }
 
 .list {
@@ -754,6 +756,8 @@ img {
 @media screen and (max-width: 767px) {
   .site-nav .item:not(:first-child) {
     display: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -1173,6 +1177,7 @@ img {
 }
 
 .svg-btn {
+  width: 23px;
   position: absolute;
   bottom: 0;
   right: 0;
