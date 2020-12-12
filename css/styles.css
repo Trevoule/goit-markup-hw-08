@@ -45,18 +45,12 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
-}
-
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -641,24 +635,35 @@ img {
           justify-content: center;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   /* только первый */
   /* всем кроме последнего */
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav .item:first-child {
@@ -752,7 +757,7 @@ img {
 }
 
 .hero {
-  width: 100%;
+  width: 480px;
   color: #ffffff;
   background-color: #2f303a;
   text-align: center;
@@ -777,10 +782,12 @@ img {
 }
 
 .hero-bg {
+  display: block;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/mobile/bg.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 480px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -790,8 +797,15 @@ img {
   }
 }
 
+@media screen and (min-width: 481px) {
+  .hero-bg {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .hero-bg {
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/tablet/bg.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet/bg.png);
   }
@@ -1189,11 +1203,18 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  width: 480px;
 }
 
 @media screen and (max-width: 767px) {
   .footer {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .footer {
+    width: 100%;
   }
 }
 

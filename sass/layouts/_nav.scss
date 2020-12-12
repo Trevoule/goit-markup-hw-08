@@ -1,11 +1,18 @@
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
-  display: flex;
+  display: block;
   align-items: center;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: center;
+  }
 
   /* только первый */
   .item:first-child {

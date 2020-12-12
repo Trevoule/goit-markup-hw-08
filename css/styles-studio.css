@@ -45,18 +45,12 @@ img {
 }
 
 .container {
-  width: 100%;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
-}
-
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -712,24 +706,35 @@ img {
   margin-bottom: 4px;
 }
 
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   /* только первый */
   /* всем кроме последнего */
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav .item:first-child {
@@ -968,11 +973,18 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  width: 480px;
 }
 
 @media screen and (max-width: 767px) {
   .footer {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .footer {
+    width: 100%;
   }
 }
 
