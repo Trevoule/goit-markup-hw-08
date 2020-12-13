@@ -5,6 +5,7 @@
   border: none;
   background-color: transparent;
   position: relative;
+  outline: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -57,4 +58,13 @@
 .svg-menu {
   fill: $primary-text-black;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $text-accent;
+  }
+  &:focus {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }

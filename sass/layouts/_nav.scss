@@ -12,13 +12,6 @@
   }
 }
 
-.main-nav--studio {
-  @include for-size(tablet) {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .site-nav {
   display: block;
   align-items: center;

@@ -59,9 +59,10 @@
 
 .addresses {
   width: 100%;
+  text-align: center;
 
   @media screen and(min-width:768px) {
     width: 232px;
-    margin-left: 20px;
+    text-align: left;
   }
 }
