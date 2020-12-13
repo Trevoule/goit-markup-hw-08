@@ -1,4 +1,18 @@
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav {
+  position: relative;
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-nav--studio {
   @include for-size(tablet) {
     display: flex;
     align-items: center;
@@ -17,24 +31,29 @@
   /* только первый */
   .item:first-child {
     margin-right: 93px;
+
+    @media screen and(max-width:767px) {
+      margin-top: 60px;
+    }
   }
 
   /* всем кроме последнего */
   .item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and(max-width:767px) {
+      margin: 0;
+    }
   }
 
   .item {
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
-  }
 
-  .item:not(:first-child) {
     @media screen and(max-width:767px) {
-      display: none;
-      margin-top: 32px;
-      margin-bottom: 32px;
+      align-items: center;
+      padding-bottom: 40px;
     }
   }
 }
@@ -45,23 +64,38 @@
   align-items: center;
   margin-left: auto;
 
+  @media screen and(max-width:767px) {
+    padding-top: 20px;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   @media screen and(min-width:768px) and(max-width:1199px) {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 0px;
     align-items: left;
+
+    .item + .item {
+      margin-top: 10px;
+    }
   }
   /* всем кроме первого  */
 
-  @media screen and(min-width:1200px) {
-    .item + .item {
+  .item + .item {
+    @media screen and(max-width:767px) {
+      margin-top: 16px;
+    }
+
+    @media screen and(min-width:1200px) {
       margin-left: 50px;
     }
   }
 
   .item {
     @media screen and(max-width:767px) {
-      display: none;
+      // display: none;
     }
   }
 
@@ -80,8 +114,28 @@
     justify-content: center;
     width: 10px;
     height: 16px;
-    margin-right: 10px;
+    margin-right: 15px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:1200px) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.tablet-nav {
+  @media screen and(max-width:767px) {
+    display: none;
   }
 }

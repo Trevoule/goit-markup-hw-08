@@ -11,6 +11,10 @@
     color: $text-accent;
     fill: $text-accent;
   }
+
+  @media screen and(max-width:767px) {
+    position: relative;
+  }
 }
 
 .address-link {
@@ -46,6 +50,12 @@
   height: 4px;
   background-color: $text-accent;
   border-radius: 2px;
+
+  @media screen and(max-width:767px) {
+    margin-top: 8px;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .link-primary {

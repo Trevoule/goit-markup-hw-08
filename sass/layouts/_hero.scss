@@ -6,12 +6,14 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   align-items: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  @include for-size(mobile) {
-    // width: 100%;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  // @media screen and(max-width: 480px) {
+  //   // width: 100%;
+  //   padding-top: 118px;
+  //   padding-bottom: 118px;
+  // }
 
   @include for-size(tablet) {
     // width: 768px;
