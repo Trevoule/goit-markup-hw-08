@@ -696,7 +696,7 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .flex-element .flex-element:not(:last-child) {
+  .flex-element:not(:last-child) {
     margin-bottom: 0;
   }
 }
