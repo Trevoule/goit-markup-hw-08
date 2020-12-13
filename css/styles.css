@@ -51,6 +51,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
 }
 
 @media (min-width: 768px) {
@@ -359,6 +360,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 24px;
   padding-left: 32px;
   padding-right: 32px;
@@ -731,12 +735,7 @@ img {
 
 .svg-menu:hover {
   fill: #2196f3;
-}
-
-.svg-menu:focus {
-  border: none;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .nav-header {
@@ -941,7 +940,7 @@ img {
 }
 
 .hero {
-  width: 480px;
+  width: 320px;
   color: #ffffff;
   background-color: #2f303a;
   text-align: center;
@@ -952,6 +951,13 @@ img {
           align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1471,22 +1477,13 @@ img {
 @media screen and (min-width: 768px) {
   .addresses {
     width: 232px;
+    margin-left: 61px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .addresses {
     text-align: left;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .subscription {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -1632,6 +1629,7 @@ img {
     display: block;
     text-align: center;
     padding-left: 89px;
+    margin-right: 69px;
   }
 }
 
