@@ -35,7 +35,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .list {
@@ -50,7 +50,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @include for-size(tablet) {
     width: 768px;

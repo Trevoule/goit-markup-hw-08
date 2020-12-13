@@ -5,6 +5,7 @@
 
 .main-nav {
   position: relative;
+  align-items: center;
 
   @include for-size(tablet) {
     display: flex;
@@ -15,6 +16,11 @@
 .site-nav {
   display: block;
   align-items: center;
+
+  @media screen and(max-width:767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   @media screen and(min-width:768px) {
     display: flex;

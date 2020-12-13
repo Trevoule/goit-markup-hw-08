@@ -37,7 +37,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  outline: 1px solid red;
 }
 
 .list {
@@ -52,7 +51,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 @media (min-width: 768px) {
@@ -205,7 +203,8 @@ img {
 .current::before {
   content: "";
   display: block;
-  bottom: 0;
+  bottom: -8px;
+  left: 0;
   margin: 0;
   position: absolute;
   width: 100%;
@@ -214,10 +213,9 @@ img {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .current::before {
-    bottom: -8px;
-    left: 0;
+    bottom: 0;
   }
 }
 
@@ -232,13 +230,20 @@ img {
 .link-secondary::before {
   content: "";
   display: block;
-  bottom: 0;
+  bottom: -8px;
+  left: 0;
   margin: 0;
   position: absolute;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .link-secondary::before {
+    bottom: 0;
+  }
 }
 
 .svg-envelope {
@@ -821,6 +826,9 @@ img {
 
 .main-nav {
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -841,6 +849,13 @@ img {
           align-items: center;
   /* только первый */
   /* всем кроме последнего */
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
