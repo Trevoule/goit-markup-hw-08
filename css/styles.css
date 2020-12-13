@@ -1483,6 +1483,7 @@ img {
 @media screen and (min-width: 1200px) {
   .addresses {
     text-align: left;
+    margin-left: 0;
   }
 }
 
