@@ -1182,7 +1182,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  width: 480px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1237,7 +1236,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .flex-footer {
     display: -webkit-box;
     display: -ms-flexbox;

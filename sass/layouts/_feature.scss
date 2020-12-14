@@ -29,6 +29,8 @@
 }
 
 .feature-list .item {
+  width: 100%;
+  
   @include for-size(mobile) {
     width: 450px;
   }

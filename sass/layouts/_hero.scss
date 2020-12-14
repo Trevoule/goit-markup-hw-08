@@ -1,6 +1,5 @@
 .hero {
-  // width: 480px;
-  width: 320px;
+  width: 100%;
   color: $white;
   background-color: $background-hero;
   text-align: center;
@@ -9,6 +8,10 @@
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
 
   @media screen and(min-width:1200px) {
     padding-top: 200px;
