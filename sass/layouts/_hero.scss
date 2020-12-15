@@ -115,15 +115,15 @@
   margin-bottom: 30px;
 
   @include for-size(mobile) {
-    padding-left: 0px;
-    padding-right: 60px;
+    padding-left: auto;
+    padding-right: auto;
     font-size: 26px;
     line-height: 1.6;
   }
 
   @include for-size(tablet) {
-    padding-left: 204px;
-    padding-right: 204px;
+    padding-left: auto;
+    padding-right: auto;
     line-height: 1.6;
   }
 
