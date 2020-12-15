@@ -35,7 +35,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 .list {
@@ -46,21 +46,22 @@ img {
 
 .container {
   width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 
-  @include for-size(mobile) {
+  @media screen and(min-width: 480px) {
     width: 480px;
   }
 
-  @include for-size(tablet) {
+  @media screen and(min-width: 768px) {
     width: 768px;
   }
 
-  @include for-size(desktop) {
+  @media screen and(min-width: 1200px) {
     width: 1200px;
     padding-left: auto;
     padding-right: auto;

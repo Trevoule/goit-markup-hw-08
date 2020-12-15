@@ -1,4 +1,5 @@
 .hero {
+  // width: 480px;
   width: 100%;
   color: $white;
   background-color: $background-hero;
@@ -8,10 +9,6 @@
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
-
-  @media screen and(min-width:480px) {
-    width: 480px;
-  }
 
   @media screen and(min-width:1200px) {
     padding-top: 200px;
@@ -44,7 +41,9 @@
     url(../images/hero/mobile/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 480px;
+
+  // min-width: 480px;
+  width: 100%;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -113,11 +112,10 @@
 
 .hero-title {
   font-weight: 900;
-
   margin-bottom: 30px;
 
   @include for-size(mobile) {
-    padding-left: 60px;
+    padding-left: 0px;
     padding-right: 60px;
     font-size: 26px;
     line-height: 1.6;
@@ -126,7 +124,6 @@
   @include for-size(tablet) {
     padding-left: 204px;
     padding-right: 204px;
-    font-size: 26px;
     line-height: 1.6;
   }
 
